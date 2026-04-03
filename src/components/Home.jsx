@@ -20,7 +20,7 @@ const Home = () => {
             <p><span className='text-gray-600'>//</span>  Building the future, one line at a time. </p>
             <div className='w-20 md:flex hidden bg-white outline-1'></div>
           </div>
-          <button className='mt-20 hover:bg-white/80 flex gap-2 items-center bg-white w-60 h-15 text-md justify-center font-medium text-black text-center'>EXECUTE_PROJECTS <IoMdArrowForward /> </button>
+          <button className='mt-20 hover:bg-white/80 flex gap-2 items-center bg-white w-60 h-15 text-md justify-center font-medium text-black text-center'><a href="#projects" className='w-full h-full p-0 text-center flex justify-center items-center gap-2'>EXECUTE_PROJECTS <IoMdArrowForward /> </a></button>
         </div>
       </div>
 

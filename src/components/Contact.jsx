@@ -20,7 +20,7 @@ const Contact = () => {
     }
   }
   return (
-    <div id='contact' className='w-full flex justify-center items-center bg-[#131313] relative text-white py-20 px-4 md:px-10'>
+    <div id='contect' className='w-full flex justify-center items-center bg-[#131313] relative text-white py-30 px-4 md:px-10'>
 
       <GridPattern />
 
