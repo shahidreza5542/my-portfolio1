@@ -23,7 +23,7 @@ const Card = ({
                 </div>
             </div>
             <div className='bg-[#1B1B1B] group transition-all duration-500 w-full h-[96%] px-7  relative mt-3 border-t-[0.5px] border-b-[0.5px] border-white/30'>
-                <img src={Image} alt="" className="w-full mt-5 h-48 object-cover opacity-70 group-hover:opacity-100 transition-opacity grayscale" />
+                <img src={Image} alt="" className="w-full mt-5 h-48 object-cover opacity-70 group-hover:opacity-100 transition-all duration-500 grayscale group-hover:grayscale-0" />
                 <h1 className='uppercase mt-6 text-xl font-bold'>{Title}</h1>
                 <p className='text-white/70 text-sm font-body mt-3'>{Discreption}</p>
 
