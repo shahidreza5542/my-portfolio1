@@ -120,7 +120,7 @@ const Contact = () => {
             {/* Button */}
             <button
               type='submit'
-              className='uppercase w-full md:w-auto bg-white px-6 py-2 text-black text-sm font-medium hover:bg-gray-200 transition'
+              className='uppercase w-full md:w-auto bg-white px-6 py-2 text-black text-sm font-medium hover:bg-white/80 transition'
             >
               SEND MESSAGE
             </button>
