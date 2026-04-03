@@ -39,19 +39,19 @@ const About = () => {
       className='w-full bg-[#0E0E0E] text-white flex flex-col lg:flex-row items-center gap-12 py-40 px-5 lg:px-20'
     >
 
-      
+
       <div className='w-full lg:w-1/2'>
         <VideoSection logo={logo} />
       </div>
 
-      
+
       <motion.div
         ref={textRef}
         style={{ y: yText }}
         className='w-full lg:w-1/2'
       >
 
-        
+
         <motion.div
           variants={textX}
           initial='initial'
@@ -63,7 +63,7 @@ const About = () => {
           </p>
         </motion.div>
 
-        
+
         <motion.div
           variants={textX}
           initial='initial'
@@ -72,7 +72,7 @@ const About = () => {
           className='mt-10 space-y-3 text-[#C6C6C6]'
         >
           <p><span className='text-white'>NAME :</span> Shahid Reza</p>
-          <p><span className='text-white'>ROLE :</span> Full-Stack Developer / UI Engineer</p>
+          <p><span className='text-white'>ROLE :</span> Frontend Developer / UI Engineer</p>
           <p><span className='text-white'>STATUS :</span> Actively optimizing the web</p>
         </motion.div>
 
@@ -89,15 +89,14 @@ const About = () => {
           <div className="flex gap-4 bg-black/40 p-5 items-center rounded-lg">
             <div className='w-0.5 h-full bg-white'></div>
             <p className="italic">
-              "I approach every codebase as a living organism. My philosophy is rooted
-              in technical precision, where minimalist design meets robust architecture."
+              "I approach every interface as a living system. My philosophy is rooted in visual precision, where minimalist design meets seamless interaction."
             </p>
           </div>
 
           {/* Text */}
           <p>
-            Specializing in high-performance backend systems and pixel-perfect frontend.
-            I don’t just write code — I build experiences that feel fast, clean, and alive.
+            Specializing in pixel-perfect interfaces and high-performance frontend experiences.
+            I don’t just build UIs — I create interactions that feel fast, smooth, and alive.
           </p>
 
         </motion.div>

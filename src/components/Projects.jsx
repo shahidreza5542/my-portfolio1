@@ -9,28 +9,30 @@ import { easeIn, motion } from 'framer-motion'
 const Projects = () => {
   const Cards = [
     {
-      Title: "SYNAPSE DASHBOARD",
-      Discreption: "A high-performance visualization tool for real-time neural network monitoring and optimization logic.",
-      TopTitle: "NEURAL_NET_V1.EXE",
-      tags: ["React", "DC.JS", "NODE"],
-      Image: first
+      Title: "ZYRO AI BUILDER",
+      Discreption: "An AI-powered SaaS platform that generates modern websites instantly using intelligent prompts and dynamic UI rendering.",
+      TopTitle: "AI_WEB_GEN_V1.EXE",
+      tags: ["React", "AI API", "Tailwind", "PayPal"],
+      Image: first,
+      link: "https://zyro-gamma.vercel.app/"
     },
     {
-      Title: 'CRYPTX PROTOCOL',
-      Discreption: 'End-to-end encrypted communication layer for decentralized applications with zero-knowledge proofs.',
-      TopTitle: 'CIPHER_PROTOCOL.SH',
-      tags: ['rust', 'wasam', 'grpc'],
-      Image: sec
+      Title: "DEVHIVE BLOG",
+      Discreption: "A scalable developer-focused blogging platform with seamless content management and fast, responsive UI experience.",
+      TopTitle: "CONTENT_ENGINE.SYS",
+      tags: ["React", "Appwrite", "Tailwind"],
+      Image: sec,
+      link: "https://devhive.qzz.io/"
     },
     {
-      Title: 'ONYX CORE OS',
-      Discreption: 'A custom micro-kernel designed for low-latency IoT devices with a modular plugin architecture.',
-      TopTitle: 'CIPHER_PROTOCOL.SH',
-      tags: ['PYTHON', 'C++', 'DOCKER'],
-      Image: third
+      Title: "TUBEIQ ANALYTICS",
+      Discreption: "An AI-powered YouTube optimization tool for generating thumbnails, descriptions, and deep performance insights.",
+      TopTitle: "AI_ANALYTICS_CORE.AI",
+      tags: ["React", "Gemini API", "AI APIs", "Tailwind"],
+      Image: third,
+      link: "https://tubeiq.qzz.io/"
     }
   ]
-
   const fadeIn = {
     initial: {
       opacity: 0,
@@ -131,6 +133,7 @@ const Projects = () => {
               TopTitle={card.TopTitle}
               Image={card.Image}
               tags={card.tags}
+              link={card.link}
             />
           </motion.div>
         ))}

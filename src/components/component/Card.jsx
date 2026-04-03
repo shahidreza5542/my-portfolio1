@@ -7,6 +7,7 @@ const Card = ({
     Discreption = '',
     TopTitle = '',
     Image = '',
+    link,
     tags = []
 }) => {
     return (
@@ -39,7 +40,7 @@ const Card = ({
             </div>
             <div className='flex'>
                 <button className="py-4 w-full font-mono text-xs uppercase font-bold text-center hover:bg-white hover:text-black transition-all bg-[#1B1B1B]">VIEW_CODE</button>
-                <button className="py-4 w-full font-mono text-xs uppercase font-bold text-center hover:bg-white hover:text-black transition-all bg-[#353535]">LIVE_DEMO</button>
+                <button className="py-4 w-full font-mono text-xs uppercase font-bold text-center hover:bg-white hover:text-black transition-all bg-[#353535]"><a href={link} target='blank'>LIVE_DEMO</a></button>
             </div>
         </div>
     )
