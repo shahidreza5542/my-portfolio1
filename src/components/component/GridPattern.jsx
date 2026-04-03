@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 
 function cn(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -18,13 +17,10 @@ export function GridPattern({
   const id = React.useId();
 
   return (
-    <motion.svg
+    <svg
       aria-hidden="true"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 0.8 }}
-      transition={{ duration: 1 }}
       className={cn(
-        "pointer-events-none absolute inset-0 w-full h-full",
+        "pointer-events-none absolute inset-0 w-full h-full opacity-80",
         className
       )}
       {...props}
@@ -45,23 +41,13 @@ export function GridPattern({
         </pattern>
       </defs>
 
-      {/* Base Grid */}
-      <motion.rect
-        width="100%"
-        height="100%"
-        fill={`url(#${id})`}
-        animate={{ x: [0, -40, 0], y: [0, -40, 0] }}
-        transition={{
-          duration: 20,
-          repeat: Infinity,
-          ease: "linear"
-        }}
-      />
+      {/* Static Grid */}
+      <rect width="100%" height="100%" fill={`url(#${id})`} />
 
-      {/* Animated Glow Squares */}
+      {/* Static Squares */}
       {squares &&
         squares.map(([sx, sy], index) => (
-          <motion.rect
+          <rect
             key={`${sx}-${sy}-${index}`}
             x={sx * width}
             y={sy * height}
@@ -69,19 +55,9 @@ export function GridPattern({
             height={height}
             rx={4}
             fill="rgba(255,255,255,0.05)"
-            animate={{
-              opacity: [0.1, 0.5, 0.1],
-              scale: [1, 1.2, 1],
-            }}
-            transition={{
-              duration: 2,
-              delay: index * 0.2,
-              repeat: Infinity,
-              ease: "easeInOut",
-            }}
           />
         ))}
-    </motion.svg>
+    </svg>
   );
 }
 
