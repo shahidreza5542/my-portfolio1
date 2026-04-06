@@ -24,7 +24,7 @@ const VideoSection = ({ logo }) => {
 
      
       <div
-        className="relative bg-[#2A2A2A] p-4 z-10 w-full md:max-w-125 max-w-75 md:h-120 h-90 rounded-xl grayscale hover:grayscale-0 transition-all duration-500"
+        className="relative bg-[#2A2A2A] p-4 z-10 sm:max-w-[85%] md:max-w-125 lg:max-w-125 max-w-75 md:h-120 h-90 rounded-xl grayscale hover:grayscale-0 transition-all duration-500"
       >
         <video
           className="w-full h-full object-cover rounded-lg"

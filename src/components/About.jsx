@@ -36,7 +36,7 @@ const About = () => {
   return (
     <div
       id='about'
-      className='w-full bg-[#0E0E0E] text-white flex flex-col lg:flex-row items-center gap-12 py-40 px-5 lg:px-20'
+      className='w-full bg-[#0E0E0E] text-white flex flex-col md:flex-row items-center gap-12 py-40 px-5 lg:px-20'
     >
 
 

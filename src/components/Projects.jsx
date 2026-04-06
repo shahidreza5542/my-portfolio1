@@ -116,7 +116,7 @@ const Projects = () => {
         <div className='border-b border-white/40 mt-5'></div>
 
       </div>
-      <div className='grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-10 px-2'>
+      <div className='sm:flex md:grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-10 px-2 flex flex-col justify-center items-center'>
         {Cards.map((card, index) => (
           <motion.div
             key={index}
