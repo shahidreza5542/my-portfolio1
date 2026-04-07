@@ -39,7 +39,7 @@ const Card = ({
                 </div>
             </div>
             <div className='flex'>
-                <button className="py-4 w-full font-mono text-xs uppercase font-bold text-center hover:bg-white hover:text-black transition-all bg-[#1B1B1B]">VIEW_CODE</button>
+                <button className="py-4 w-full font-mono text-xs uppercase font-bold text-center hover:bg-white hover:text-black transition-all bg-[#1B1B1B]"><a href={link} target='blank'>VIEW_CODE</a></button>
                 <button className="py-4 w-full font-mono text-xs uppercase font-bold text-center hover:bg-white hover:text-black transition-all bg-[#353535]"><a href={link} target='blank'>LIVE_DEMO</a></button>
             </div>
         </div>

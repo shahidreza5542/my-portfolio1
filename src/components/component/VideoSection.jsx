@@ -19,10 +19,10 @@ const VideoSection = ({ logo }) => {
       className="relative w-full flex justify-center items-center"
     >
 
-      
+      {/* frame */}
       <div className="absolute w-[92%] h-[92%] border border-white/30 rounded-xl z-0"></div>
 
-     
+     {/* video */}
       <div
         className="relative bg-[#2A2A2A] p-4 z-10 sm:max-w-[85%] md:max-w-125 lg:max-w-125 max-w-75 md:h-120 h-90 rounded-xl grayscale hover:grayscale-0 transition-all duration-500"
       >

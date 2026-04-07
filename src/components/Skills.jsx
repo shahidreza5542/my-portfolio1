@@ -94,7 +94,7 @@ const Skills = () => {
         </p>
       </motion.div>
 
-      {/* Grid */}
+      {/* Cards */}
       <motion.div
         variants={fadeIn}
         initial='initial'
@@ -103,7 +103,7 @@ const Skills = () => {
           once: true,
         }}
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-12 border-r border-white/20"
-        >
+      >
         {skills.map((group, index) => (
           <SkillCard
             key={index}

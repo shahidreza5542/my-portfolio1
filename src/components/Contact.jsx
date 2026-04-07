@@ -50,7 +50,7 @@ const Contact = () => {
           <p className='font-medium flex flex-wrap gap-2 text-sm md:text-base tracking-widest font-mono'>
             shahid@terminal:~$
             <span className='text-white/80'>
-              mail --to shahidreza660@gmail.com
+              mail --to youremail@gmail.com
             </span>
           </p>
 
@@ -63,7 +63,7 @@ const Contact = () => {
         <div className='px-4 md:px-8 py-6'>
 
           <form
-            action="https://formsubmit.co/shahidreza660@gmail.com"
+            action="https://formsubmit.co/youremail@gmail.com"
             method="POST"
             className='space-y-6'
           >

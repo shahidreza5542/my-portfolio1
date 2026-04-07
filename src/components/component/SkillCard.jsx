@@ -10,7 +10,7 @@ const SkillCard = ({ Title = '', Skills = [] }) => {
 
       {Skills.map((Skill, index) => (
         <div key={index} className='mb-4 mt-10'>
-          
+
           <div className='flex justify-between text-sm mb-1'>
             <p className='uppercase text-white/90'>{Skill.skill}</p>
             <p className='text-white/40'>{Skill.percent}</p>

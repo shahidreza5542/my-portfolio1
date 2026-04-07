@@ -14,7 +14,8 @@ const Projects = () => {
       TopTitle: "AI_WEB_GEN_V1.EXE",
       tags: ["React", "AI API", "Tailwind", "PayPal"],
       Image: first,
-      link: "https://zyro-gamma.vercel.app/"
+      link: "https://zyro-gamma.vercel.app/",
+      repoLink: ""
     },
     {
       Title: "DEVHIVE BLOG",
@@ -22,7 +23,8 @@ const Projects = () => {
       TopTitle: "CONTENT_ENGINE.SYS",
       tags: ["React", "Appwrite", "Tailwind"],
       Image: sec,
-      link: "https://devhive.qzz.io/"
+      link: "https://devhive.qzz.io/",
+      repoLink: ""
     },
     {
       Title: "TUBEIQ ANALYTICS",
@@ -30,9 +32,11 @@ const Projects = () => {
       TopTitle: "AI_ANALYTICS_CORE.AI",
       tags: ["React", "Gemini API", "AI APIs", "Tailwind"],
       Image: third,
-      link: "https://tubeiq.qzz.io/"
+      link: "https://tubeiq.qzz.io/",
+      repoLink: ""
     }
   ]
+  
   const fadeIn = {
     initial: {
       opacity: 0,

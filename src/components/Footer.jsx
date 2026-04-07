@@ -8,8 +8,8 @@ const Footer = () => {
       </div>
       <div>
         <ul className='flex md:mt-0 mt-3 justify-center gap-5 underline underline-offset-7 text-xs text-white/80 hover:text-white/95'>
-          <li><a href="https://github.com/shahidreza5542/">github</a></li>
-          <li><a href="">LINKEDIN</a></li>
+          <li><a href="#">GITHUB</a></li>
+          <li><a href="#">LINKEDIN</a></li>
           <li><a href="#">TWITTER</a></li>
         </ul>
       </div>

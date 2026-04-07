@@ -44,18 +44,13 @@ function App() {
   return (
     <>
       <Navbar />
+      <Home />
+      <About />
+      <Projects />
+      <Skills />
+      <Contact />
+      <Footer />
 
-      <div className='relative'>
-        <Home />
-      </div>
-
-      <div>
-        <About />
-        <Projects />
-        <Skills />
-        <Contact />
-        <Footer />
-      </div>
     </>
   )
 }

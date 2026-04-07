@@ -15,7 +15,7 @@ const Home = () => {
         </div>
 
         <div className='flex flex-col'>
-          <h1 className='md:text-9xl text-7xl font-bold mt-5'>SHAHID <br /> REZA</h1>
+          <h1 className='md:text-9xl text-7xl font-bold mt-5 uppercase'>SHAHID <br /> REZA</h1>
           <div className='mt-7 flex gap-4 items-center md:text-2xl text-lg tracking-widest text-gray-300'> 
             <p><span className='text-gray-600'>//</span>  Building the future, one line at a time. </p>
             <div className='w-20 md:flex hidden bg-white outline-1'></div>

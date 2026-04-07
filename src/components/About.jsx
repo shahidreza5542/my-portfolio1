@@ -39,7 +39,7 @@ const About = () => {
       className='w-full bg-[#0E0E0E] text-white flex flex-col md:flex-row items-center gap-12 py-40 px-5 lg:px-20'
     >
 
-
+      {/* video */}
       <div className='w-full lg:w-1/2'>
         <VideoSection logo={logo} />
       </div>
@@ -51,7 +51,6 @@ const About = () => {
         className='w-full lg:w-1/2'
       >
 
-
         <motion.div
           variants={textX}
           initial='initial'
@@ -62,7 +61,6 @@ const About = () => {
             USER_PROFILE
           </p>
         </motion.div>
-
 
         <motion.div
           variants={textX}

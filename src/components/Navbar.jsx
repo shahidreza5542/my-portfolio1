@@ -15,7 +15,7 @@ const Navbar = () => {
         <A title="05. CONTACT" href={'#contect'}/>
       </div>
 
-      <button className="bg-white text-black px-4 py-2 hover:bg-white/80 transition-all duration-200 text-xs font-medium">RESUME.SH</button>
+      <a href="src/assets/logo.png" download={'Resume'} className="bg-white text-black px-4 py-2 hover:bg-white/80 transition-all duration-200 text-xs font-medium">RESUME.SH</a>
     </nav>
   );
 };
