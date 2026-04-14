@@ -16,7 +16,7 @@ const About = () => {
   const yText = useTransform(scrollYProgress, [0, 1], [60, -60]);
 
   const textX = {
-    initial: { opacity: 0, x: 40 },
+    initial: { opacity: 0, x: 20 },
     animate: {
       opacity: 1,
       x: 0,

@@ -4,7 +4,7 @@ import A from "./component/A";
 const Navbar = () => {
 
   return (
-    <nav className="z-100 border-b-[0.5px] border-white/20 backdrop-blur-md w-screen text-white justify-between flex items-center py-4 md:px-20 px-4 fixed top-0">
+    <nav className="z-100 border-b-[0.5px] border-white/20 backdrop-blur-md w-screen text-white justify-between flex items-center py-4 md:px-20 px-4 sticky top-0 overflow-hidden">
       <p className="text-xl font-bold">SHAHID_REZA</p>
 
       <div className="md:flex gap-3 hidden">
