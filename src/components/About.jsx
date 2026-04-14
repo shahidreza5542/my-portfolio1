@@ -52,7 +52,7 @@ const About = () => {
       >
 
         <motion.div
-          variants={textX}
+          variants={textYAnim}
           initial='initial'
           whileInView='animate'
           viewport={{ once: true }}
@@ -63,7 +63,7 @@ const About = () => {
         </motion.div>
 
         <motion.div
-          variants={textX}
+          variants={textYAnim}
           initial='initial'
           whileInView='animate'
           viewport={{ once: true }}
