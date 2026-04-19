@@ -5,7 +5,7 @@ export default function Footer() {
         <div className="flex flex-col items-center md:items-start gap-4">
            <h4 className="text-2xl font-black text-white">SHAHID<span className="text-accent">.</span></h4>
            <p className="mono-text text-[8px] text-dim tracking-widest text-center md:text-left">
-             ARCHITECTING DIGITAL SYSTEMS _ SINCE 2025
+             CRAFTING INTERACTIVE EXPERIENCES _ SINCE 2025
            </p>
         </div>
 

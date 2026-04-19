@@ -82,4 +82,16 @@
   .text-glow {
     text-shadow: 0 0 10px rgba(190, 251, 44, 0.5);
   }
+
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .animate-marquee {
+    animation: marquee 30s linear infinite;
+  }
 }

@@ -4,8 +4,8 @@ import { motion, useSpring } from 'motion/react';
 export default function CustomCursor() {
   const [isPointer, setIsPointer] = useState(false);
   
-  const cursorX = useSpring(0, { stiffness: 500, damping: 28 });
-  const cursorY = useSpring(0, { stiffness: 500, damping: 28 });
+  const cursorX = useSpring(0, { stiffness: 150, damping: 25 });
+  const cursorY = useSpring(0, { stiffness: 150, damping: 25 });
 
   useEffect(() => {
     const moveCursor = (e: MouseEvent) => {

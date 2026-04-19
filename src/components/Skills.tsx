@@ -2,47 +2,54 @@ import { motion } from 'motion/react';
 
 const skillGroups = [
   {
-    title: 'ENGINEERING_CORE',
+    title: 'FRONTEND_ENGINEERING',
     skills: [
-      { name: 'HTML5', percent: 95 },
-      { name: 'CSS3_SCSS', percent: 90 },
-      { name: 'JavaScript_ES6', percent: 98 },
+      { name: 'JavaScript_ES6+', percent: 98 },
+      { name: 'React_JS', percent: 95 },
+      { name: 'HTML5_CSS3', percent: 95 },
     ]
   },
   {
-    title: 'ARCHITECTURE',
+    title: 'UI_UX_DESIGN',
     skills: [
-      { name: 'React.js', percent: 75 },
-      { name: 'Next.js_14', percent: 60 },
-      { name: 'Tailwind_CSS', percent: 90 },
+      { name: 'Responsive_Design', percent: 95 },
+      { name: 'Modern_Typography', percent: 90 },
+      { name: 'Interactive_UI', percent: 98 },
     ]
   },
   {
     title: 'INTERACTION_FX',
     skills: [
-      { name: 'Framer_Motion', percent: 85 },
-      { name: 'GSAP_Animation', percent: 70 },
-      { name: 'UX_Logics', percent: 80 },
+      { name: 'Framer_Motion', percent: 95 },
+      { name: 'Micro_Animations', percent: 85 },
+      { name: 'Visual_Logic', percent: 90 },
     ]
   },
   {
-    title: 'OPERATIONS',
+    title: 'WORKFLOW_TOOLS',
     skills: [
-      { name: 'Git_Workflow', percent: 90 },
-      { name: 'Deployment_CI', percent: 85 },
-      { name: 'Figma_DevMode', percent: 50 },
+      { name: 'Git_GitHub', percent: 90 },
+      { name: 'Vercel_Deploy', percent: 95 },
+      { name: 'VS_Code_Pro', percent: 100 },
     ]
   }
 ];
 
 export default function Skills() {
   return (
-    <section className="py-40 bg-black px-6 md:px-24" id="lab">
+    <motion.section 
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      viewport={{ once: true }}
+      className="py-24 md:py-40 bg-black px-6 md:px-24" 
+      id="lab"
+    >
       <div className="max-w-7xl mx-auto">
-        <div className="mb-32 flex flex-col md:flex-row justify-between items-start gap-12">
+        <div className="mb-20 md:mb-32 flex flex-col md:flex-row justify-between items-start gap-8 md:gap-12">
           <div className="max-w-xl">
-            <span className="mono-text text-accent mb-4 block underline decoration-accent/30 decoration-2 underline-offset-8">04. TECH_STACK_MATRIX</span>
-            <h2 className="text-7xl md:text-9xl text-white leading-none">
+            <span className="mono-text text-accent mb-4 block underline decoration-accent/30 decoration-2 underline-offset-8 text-[10px] md:text-sm">04. TECH_STACK_MATRIX</span>
+            <h2 className="text-4xl sm:text-6xl md:text-9xl text-white leading-[0.85] tracking-tighter">
               THE <br />
               <span className="text-neutral-800">ENGINE.</span>
             </h2>
@@ -83,11 +90,11 @@ export default function Skills() {
 
         {/* Decorative background accent */}
         <div className="mt-24 border-t border-white/10 pt-12 flex flex-wrap gap-12 justify-center opacity-30">
-           {['TYPESCRIPT', 'NODE_JS', 'FIREBASE', 'MONGODB', 'EXPRESS', 'POSTGRES'].map(t => (
+           {['TYPESCRIPT', 'FRAMER_MOTION', 'TAILWIND', 'VERCEL', 'REACT_JS', 'JAVASCRIPT'].map(t => (
              <span key={t} className="mono-text text-[10px] text-neutral-500 hover:text-white transition-colors cursor-default">{t}</span>
            ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

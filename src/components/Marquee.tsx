@@ -11,18 +11,6 @@ export default function Marquee() {
           </div>
         ))}
       </div>
-      
-      <style>{`
-        @keyframes marquee {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
-        .animate-marquee {
-          animation: marquee 20s linear infinite;
-          display: flex;
-          width: fit-content;
-        }
-      `}</style>
     </div>
   );
 }

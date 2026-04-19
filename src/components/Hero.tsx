@@ -8,19 +8,25 @@ export default function Hero() {
     offset: ['start start', 'end start']
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], [0, 400]);
+  const y = useTransform(scrollYProgress, [0, 1], [0, 500]);
+  const textY = useTransform(scrollYProgress, [0, 1], [0, -100]);
+  const gridY = useTransform(scrollYProgress, [0, 1], [0, 200]);
+  const rotateX = useTransform(scrollYProgress, [0, 1], [0, 45]);
   const opacity = useTransform(scrollYProgress, [0, 0.4], [1, 0]);
 
   return (
     <header 
       id="home"
       ref={containerRef}
-      className="relative h-screen w-full flex flex-col items-center justify-center bg-black overflow-hidden"
+      className="relative h-screen w-full flex flex-col items-center justify-center bg-black overflow-hidden perspective-1000"
     >
-      <div className="absolute inset-0 grid-pattern opacity-20" />
+      <motion.div 
+        style={{ y: gridY, rotateX }}
+        className="absolute inset-0 grid-pattern opacity-20 origin-center" 
+      />
       
       <motion.div 
-        style={{ y, opacity }}
+        style={{ y: textY, opacity }}
         className="z-20 text-center px-6 relative"
       >
         <div className="flex flex-col items-center">
@@ -30,16 +36,16 @@ export default function Hero() {
              className="h-px bg-accent mb-8"
            />
            <span className="mono-text text-accent mb-4 tracking-[0.5em] block">
-             Verified Full-Stack Engineer
+             Frontend Developer & UI Designer
            </span>
         </div>
 
-        <h1 className="text-[15vw] md:text-[12vw] leading-none text-white tracking-tighter">
+        <h1 className="text-[18vw] md:text-[12vw] font-black leading-[0.9] text-white tracking-tighter">
           SHAHID <br />
-          <span className="text-transparent" style={{ WebkitTextStroke: '2px white' }}>REZA.</span>
+          <span className="text-transparent" style={{ WebkitTextStroke: '1px white' }}>REZA.</span>
         </h1>
         
-        <div className="mt-12 flex justify-between items-center w-full max-w-lg mx-auto border-t border-white/10 pt-8">
+        <div className="mt-8 md:mt-12 flex justify-between items-center w-full max-w-lg mx-auto border-t border-white/10 pt-6 md:pt-8 px-4">
            <div className="text-left">
               <p className="mono-text text-dim text-[8px]">Availability</p>
               <p className="mono-text text-accent text-[10px]">Active _ 2025</p>
