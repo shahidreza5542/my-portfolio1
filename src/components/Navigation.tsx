@@ -21,12 +21,12 @@ export default function Navigation() {
 
   return (
     <>
-      <nav className={`fixed top-0 w-full z-[100] px-6 md:px-12 h-20 flex justify-between items-center transition-all duration-500 ${scrolled || isOpen ? 'bg-black/80 backdrop-blur-md border-b border-white/5' : 'bg-transparent'}`}>
+      <nav className={`fixed top-0 w-full z-100 px-6 md:px-12 h-20 flex justify-between items-center transition-all duration-500 ${scrolled || isOpen ? 'bg-black/80 backdrop-blur-md border-b border-white/5' : 'bg-transparent'}`}>
         <motion.a 
           href="#home"
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
-          className="text-xl md:text-2xl font-black tracking-tighter text-white z-[120]"
+          className="text-xl md:text-2xl font-black tracking-tighter text-white z-120"
         >
           SHAHID<span className="text-accent underline decoration-2 underline-offset-4">.</span>
         </motion.a>
