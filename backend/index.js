@@ -15,7 +15,7 @@ app.use(express.json())
 
 connectDB()
 
-router.get('/', async (req, res) => {
+app.get('/', async (req, res) => {
   try {
     const projects = await ProjectModel.find()
     res.json({ success: true, data: projects })
