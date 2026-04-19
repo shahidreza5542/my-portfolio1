@@ -25,7 +25,7 @@ const Admin = () => {
 
     const login = async () => {
         try {
-            const res = await axios.post("http://localhost:3000/api/auth/login", {
+            const res = await axios.post(`${import.meta.env.VITE_BACKEND_PATH}/api/auth/login`, {
                 email,
                 password
             })
@@ -45,7 +45,7 @@ const Admin = () => {
     const addProject = async () => {
         try {
             const res = await axios.post(
-                "http://localhost:3000/api/projects/add",
+                `${import.meta.env.VITE_BACKEND_PATH}/api/projects/add`,
                 {
                     ...form,
                     tags: form.tags.split(",").map(tag => tag.trim())
@@ -68,7 +68,7 @@ const Admin = () => {
     const deleteProject = async () => {
         try {
             const res = await axios.post(
-                "http://localhost:3000/api/projects/remove",
+                `$${import.meta.env.VITE_BACKEND_PATH}/api/projects/remove`,
                 { id },
                 {
                     headers: {
