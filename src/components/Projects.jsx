@@ -1,30 +1,42 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import GridPattern from './component/GridPattern'
 import Card from './component/Card'
 import first from "/src/assets/1.png"
 import sec from "/src/assets/2.png"
 import third from "/src/assets/3.png"
 import { easeIn, motion } from 'framer-motion'
-import axios from "axios"
 
 const Projects = () => {
-  const [projects, setProjects] = useState([])
-
-  const getProjects = async () => {
-    try {
-      const res = await axios.get(`${import.meta.env.VITE_BACKEND_PATH}/api/projects`)
-
-      setProjects(res.data.data)
-
-    } catch (error) {
-      console.log(error)
+  const Cards = [
+    {
+      Title: "ZYRO AI BUILDER",
+      Discreption: "An AI-powered SaaS platform that generates modern websites instantly using intelligent prompts and dynamic UI rendering.",
+      TopTitle: "AI_WEB_GEN_V1.EXE",
+      tags: ["React", "AI API", "Tailwind", "PayPal"],
+      Image: first,
+      link: "https://zyro-gamma.vercel.app/",
+      repoLink: ""
+    },
+    {
+      Title: "DEVHIVE BLOG",
+      Discreption: "A scalable developer-focused blogging platform with seamless content management and fast, responsive UI experience.",
+      TopTitle: "CONTENT_ENGINE.SYS",
+      tags: ["React", "Appwrite", "Tailwind"],
+      Image: sec,
+      link: "https://devhive.qzz.io/",
+      repoLink: ""
+    },
+    {
+      Title: "TUBEIQ ANALYTICS",
+      Discreption: "An AI-powered YouTube optimization tool for generating thumbnails, descriptions, and deep performance insights.",
+      TopTitle: "AI_ANALYTICS_CORE.AI",
+      tags: ["React", "Gemini API", "AI APIs", "Tailwind"],
+      Image: third,
+      link: "https://tubeiq.qzz.io/",
+      repoLink: ""
     }
-  }
-
-  useEffect(() => {
-    getProjects()
-  }, [])
-
+  ]
+  
   const fadeIn = {
     initial: {
       opacity: 0,
@@ -109,13 +121,15 @@ const Projects = () => {
 
       </div>
       <div className='sm:flex md:grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-10 px-2 flex flex-col justify-center items-center'>
-        {projects.map((card, index) => (
+        {Cards.map((card, index) => (
           <motion.div
             key={index}
             variants={fadeIn}
-            initial="initial"
+            initial='initial'
             whileInView="animate"
-            viewport={{ once: true }}
+            viewport={{
+              once: true,
+            }}
           >
             <Card
               Title={card.Title}
