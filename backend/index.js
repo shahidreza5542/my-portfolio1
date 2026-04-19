@@ -15,13 +15,8 @@ app.use(express.json())
 
 connectDB()
 
-app.get('/', async (req, res) => {
-  try {
-    const projects = await ProjectModel.find()
-    res.json({ success: true, data: projects })
-  } catch (err) {
-    res.status(500).json({ success: false, message: err.message })
-  }
+app.get('/', (req, res) => {
+  res.send('Hello World!')
 })
 
 // routes
